@@ -1,0 +1,16 @@
+/* Dark theme */
+body{
+    color: aliceblue;
+    background-color: gray;
+}
+
+
+/* Custom page */
+
+header {
+    padding: 40px;
+    text-align: center;
+    background: #1abc9c;
+    color: black;
+    font-size: 30px;
+  }
