@@ -21,7 +21,7 @@ header {
 
 input[type=text] {
     width: 40px;
-    margin-left: 1.5em;
+    margin-left: 2.5em;
 }
 
 .box{
@@ -43,7 +43,7 @@ input[type=text] {
 .letter{
     margin-left: 1.5em;
     background-color: #d44c4c;
-    width: 40px;
+    width: 60px;
     display: inline-block;
 }
 
