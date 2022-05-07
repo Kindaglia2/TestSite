@@ -7,6 +7,7 @@ body{
 
 /* Custom page */
 
+/* Title box */
 header {
     padding: 40px;
     text-align: center;
@@ -15,21 +16,38 @@ header {
     font-size: 30px;
     margin: 1em;
   }
-#container{
-    
-    margin-left: 36%;
+
+/* center */
+.center {
+    width: 500px;
+    border: 3px solid green;
+    padding: 10px;
+    float: left;
+}
+.word{
+    display: inline-block;
+    background-color: #0395e9;
+    width: 500px;
+    height: 500px;
+
+} 
+.left{
+
 }
 
+/* size input text */
 input[type=text] {
     width: 40px;
     margin-left: 2.5em;
 }
 
+/* size box with the color */
 .box{
     width: 0.8em;
     height: 1em;
     display: inline-block;
 }
+/* ⇩⇩⇩color option⇩⇩⇩ */
 .gray{
     background-color: gray;
 }
@@ -40,7 +58,9 @@ input[type=text] {
 .green{
     background-color: green;
 }
+/* ⇧⇧⇧color option⇧⇧⇧ */
 
+/* div */
 .letter{
     margin-left: 1.5em;
     background-color: #d44c4c;
@@ -52,3 +72,4 @@ button{
     margin-top: 2em;
     margin-left: 20%
 }
+
