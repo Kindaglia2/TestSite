@@ -23,6 +23,7 @@ header {
     margin-left: 10%;
     width: 30%;
     border: 3px solid black;
+    border-radius: 30px;
     padding: 5%;
     float: left;
     margin-right: 5%;
@@ -47,6 +48,7 @@ input[type=text] {
     width: 0.8em;
     height: 1em;
     display: inline-block;
+    border-radius: 100%;
 }
 /* ⇩⇩⇩color option⇩⇩⇩ */
 .gray{
@@ -65,7 +67,7 @@ input[type=text] {
 .letter{
     margin-left: 1.5em;
     background-color: #e1e6e7;
-    width: 60px;
+    width: 10%;
     display: inline-block;
 }
 
@@ -73,16 +75,64 @@ button{
     margin-top: 2em;
     margin-left: 20%
 }
+
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 320px) {
     .center {
-        margin-left: 2%;
+        margin-left: 0%;
         width: 85%;
     }
     .word{
-        margin-left: 2%;
-        width: 86%;
-    }  
+        padding: 0%;
+        margin-left: 0%;
+        width: 97%;
+    }
+    .box{
+        width: 20%;
+        display: inline-block;
+    }
+    input[type=text] {
+        width: 40px;
+        margin-left: 0%;
+    }
+    .letter{
+        margin-left: 3%;
+        background-color: #e1e6e7;
+        width: 15%;
+        display: inline-block
+    }
+
+
+
+} 
+
+
+/* Extra small devices (phones, 600px and down) *//*
+@media only screen and (max-width: 600px) {
+    .center {
+        margin-left: 0%;
+        width: 87%;
+    }
+    .word{
+        padding: 0%;
+        margin-left: 0%;
+        width: 98%;
+    }
+    .box{
+        width: 20%;
+        display: inline-block;
+    }
+    input[type=text] {
+        width: 10%;
+        margin-left: 7%;
+    }
+    .letter{
+        margin-left: 4%;
+        background-color: #e1e6e7;
+        width: 15%;
+        display: inline-block
+    }
+    
 } 
 
 
