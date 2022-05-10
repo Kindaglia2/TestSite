@@ -33,6 +33,7 @@ header{
 /*riquadroper il form*/
 #row1{
     width: 100%;
+    margin: 20px;
 }
 
 /*cella input*/
@@ -95,7 +96,27 @@ input[type='radio']:checked:after {
 .orange[type='radio']:checked:after {
     background-color: orangered;
 }
+.optionRadio.orange{
+    top: -85px;
+    left: 93px;
+}
+/*caratteristiche pallino grtigio*/
+.gray[type='radio']:after {
+    background-color: white;
 
+}
+.gray[type='radio']:checked:after {
+    background-color: gray;
+}
+.optionRadio.gray{
+    top: -55px;
+    left: 62px;
+}
+/*caratteristiche pallino verde*/
+.optionRadio.green{
+    top: -20px;
+    left: 0px;
+}
 
 /*div per mettere le lettere allineate */
 #letter{
