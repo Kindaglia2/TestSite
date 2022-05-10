@@ -87,14 +87,23 @@ input[type='radio']:checked:after {
     visibility: visible;
     border: 2px dashed black;
 }
+/*caratteristiche del pallino arancione*/
+.orange[type='radio']:after {
+    background-color: yellow;
+
+}
+.orange[type='radio']:checked:after {
+    background-color: orangered;
+}
+
+
+/*div per mettere le lettere allineate */
 #letter{
     display: block;
     background-color: red;
     float: left;
     width: 135px;
 }
-
-
 
 
 /*Mobile*/
@@ -106,5 +115,4 @@ input[type='radio']:checked:after {
     #word{
         width: 100%;
     }
-
 }
