@@ -62,32 +62,39 @@ input[type=text] {
 }
 
 /*pallino colorato*/
-  input[type='radio']:after {
-        top:  20px;
-        left: -5px;
-        width: 15px;
-        height: 15px;
-        border-radius: 80%;
-        position: relative;
-        background-color: greenyellow;
-        content: '';
-        display: inline-block;
-        visibility: visible;
-        border: 2px solid white;
-    }
+input[type='radio']:after {
+    top:  20px;
+    left: -5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 80%;
+    position: relative;
+    background-color: greenyellow;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
 
-    input[type='radio']:checked:after {
-        top:  20px;
-        left: -5px;
-        width: 15px;
-        height: 15px;
-        border-radius: 80%;
-        position: relative;
-        background-color: green;
-        content: '';
-        display: inline-block;
-        visibility: visible;
-        border: 2px dashed black;
-    }
+input[type='radio']:checked:after {
+    top:  20px;
+    left: -5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 80%;
+    position: relative;
+    background-color: green;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px dashed black;
+}
 
+/*Mobile*/
+/*Adattamento mobile*/
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: red;
+    }
+  }
 
