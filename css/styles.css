@@ -96,5 +96,9 @@ input[type='radio']:checked:after {
     #preFormLetter{
         width: 100%;
     }
+    #word{
+        width: 100%;
+    }
+
   }
 
