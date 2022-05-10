@@ -6,93 +6,23 @@
     <meta name="Autor" content="BrIghT">
     <meta name="description" content="WordleSolutionIta">
     <link rel=" icon" type="img/ico" href="img/icon.png">
-    <title>WordleSolution</title>
+    <title>test css responsive progettetion</title>
     <link href="/css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Title -->
-    <header >Wordle Help me</header>
-    <!-- Left page -->
-    <div class="left">
-        <!-- Div for form -->
-        <div id="form" class="center">
-            <!-- 5 input text, one for letter-->
-            <form action="https://eniolvye1b8h.x.pipedream.net" method="post" >
-                <input type="text" name="first letter"/>
-                <input type="text" name="second letter"/>
-                <input type="text" name="third letter"/>
-                <input type="text" name="fourth letter"/>
-                <input type="text" name="fifth letter"/>
-                <br>
-                <!-- Box for value letter 1/1 -->
-                <div  class="letter">
-                    <input type="radio" name="color1" value="orange">
-                    <div class="box orange"></div><br>
-                    <input type="radio" name="color1" value="green" >
-                    <div class="box green"></div><br>
-                    <input type="radio" name="color1" value="gray">
-                    <div class="box gray"></div><br>
-                </div>
-                <!-- Box for value letter 2/1 -->
-                <div  class="letter">
-                    <input type="radio" name="color2" value="orange">
-                    <div class="box orange"></div><br>
-                    <input type="radio" name="color2" value="green" >
-                    <div class="box green"></div><br>
-                    <input type="radio" name="color2" value="gray">
-                    <div class="box gray"></div><br>
-                </div>
-                <!-- Box for value letter 3/1 -->
-                <div  class="letter">
-                    <input type="radio" name="color3" value="orange">
-                    <div class="box orange"></div><br>
-                    <input type="radio" name="color3" value="green">
-                    <div class="box green"></div><br>
-                    <input type="radio" name="color3" value="gray">
-                    <div class="box gray"></div><br>
-                </div>
-                <!-- Box for value letter 4/1 -->
-                <div  class="letter">
-                    <input type="radio" name="color4" value="orange">
-                    <div class="box orange"></div><br>
-                    <input type="radio" name="color4" value="green" >
-                    <div class="box green"></div><br>
-                    <input type="radio" name="color4" value="gray">
-                    <div class="box gray"></div><br>
-                </div>
-                <!-- Box for value letter 5/1 -->
-                <div  class="letter">
-                    <input type="radio" name="color5" value="orange">
-                    <div class="box orange"></div><br>
-                    <input type="radio" name="color5" value="green" >
-                    <div class="box green"></div><br>
-                    <input type="radio" name="color5" value="gray">
-                    <div class="box gray"></div><br>
-                </div>
-                <br>
-                <button type="submit">Send first word</button>
-            </form>
-            <!-- Secondo Word -->
+
+    <header>Title</header>
+    <div id="preFormLetter">
+        <div id="row1">
+            <input type="text" name="username" maxlength="1">
+            <input class="optionRadio green" type="radio" name="green" value="correct">
+
         </div>
-            
     </div>
-    
-
-    <div class="word">
-        <h1>Recommended words </h1>
-        <p>
-            ETNIA,  ETNIE,  EVADA,   EVADE <br>
-            EVADI,   EVADO,   EVASA ,  EVASE,<br>   EVASI 
-            EVASO,   EVIRA ,  EVIRI ,  EVIRO,<br>   EVITA 
-            EVIT,  I EVITO
-        </p>
-
-    </div>
+    <div id="word"></div>
 
 
 
-
-    
 
     <script src="/js/main.js"></script>
 </body>
