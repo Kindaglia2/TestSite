@@ -15,7 +15,7 @@ header{
 
 /*riquadro sinistra con gli input*/
 #preFormLetter{
-    width: 50%;
+    width: 60%;
     height: 600px;
     background-color: rgb(158, 202, 121);
     display: inline-block;
@@ -24,7 +24,7 @@ header{
 /*riquadro destra con le parole*/
 #word{
     display: inline-block;
-    width: 50%;
+    width: 40%;
     height: 600px;
     background-color: rgb(109, 204, 221);
 }
@@ -32,9 +32,7 @@ header{
 
 /*riquadroper il form*/
 #row1{
-    box-sizing: content-box;
-    width: 20%;
-    background-color: rgb(75, 91, 161);
+    width: 100%;
 }
 
 /*cella input*/
@@ -89,6 +87,15 @@ input[type='radio']:checked:after {
     visibility: visible;
     border: 2px dashed black;
 }
+#letter{
+    display: block;
+    background-color: red;
+    float: left;
+    width: 135px;
+}
+
+
+
 
 /*Mobile*/
 /*Adattamento mobile*/
@@ -100,5 +107,4 @@ input[type='radio']:checked:after {
         width: 100%;
     }
 
-  }
-
+}
