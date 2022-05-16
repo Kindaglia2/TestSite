@@ -138,3 +138,18 @@ input[type='radio']:checked:after {
         width: 100%;
     }
 }
+@media only screen and (max-width: 1000px) {
+    #preFormLetter{
+        width: 100%;
+    }
+    /* da rivedere  */
+    #row1{
+        width: 110%;
+        margin: 0;
+    }
+
+
+    #word{
+        width: 100%;
+    }
+}
