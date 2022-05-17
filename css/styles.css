@@ -16,7 +16,7 @@ header{
 /*riquadro sinistra con gli input*/
 #preFormLetter{
     width: 60%;
-    height: 600px;
+    height: 100%;
     background-color: rgb(158, 202, 121);
     display: inline-block;
     float: left;
@@ -25,7 +25,7 @@ header{
 #word{
     display: inline-block;
     width: 40%;
-    height: 600px;
+    height: 100%;
     background-color: rgb(109, 204, 221);
     box-sizing: content-box;
 }
