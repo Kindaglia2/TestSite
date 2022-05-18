@@ -148,12 +148,28 @@ th, td {
 /*Mobile*/
 /*Adattamento mobile*/
 @media only screen and (max-width: 600px) {
+    
     #preFormLetter{
         width: 100%;
     }
     #word{
         width: 100%;
     }
+
+    header{
+        padding-top: 5px;
+        font-size: 1em;
+        height: 30px;
+    }
+    table{
+        padding: 0;
+        margin: 0;
+    }
+    #letter{
+        width: 110px;
+    }
+
+
 }
 @media only screen and (max-width: 1000px) {
     #preFormLetter{
