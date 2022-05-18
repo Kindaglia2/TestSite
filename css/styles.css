@@ -151,15 +151,17 @@ th, td {
     
     #preFormLetter{
         width: 100%;
+        margin: 0;
     }
     #word{
-        width: 100%;
+        width: 600%;
     }
 
     header{
         padding-top: 5px;
         font-size: 1em;
-        height: 30px;
+        height: 20px;
+        box-sizing: content-box;
     }
     table{
         padding: 0;
@@ -168,8 +170,6 @@ th, td {
     #letter{
         width: 110px;
     }
-
-
 }
 @media only screen and (max-width: 1000px) {
     #preFormLetter{
