@@ -1,13 +1,18 @@
+
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
+
 /* Dark theme */
 body{
     color: black;
     background-color: gray;
+    
 }
-
 /*titolo pagina*/
 header{
-    font-size: 5em;
-    width: 100%;
+    padding: 1%;
+    font-family: 'Press Start 2P';
+    font-size: 4em;
+    width: 98%;
     height: 80px;
     background-color: antiquewhite;
     text-align: center;
@@ -15,7 +20,7 @@ header{
 
 /*riquadro sinistra con gli input*/
 #preFormLetter{
-    width: 60%;
+    width: 50%;
     height: 100%;
     background-color: rgb(158, 202, 121);
     display: inline-block;
@@ -45,6 +50,7 @@ input{
 }
 /*teto nella cella input*/
 input[type=text] {
+    border-radius: 25%;
     font-size: 5em;
     text-align: center;
     background-color: grey;
@@ -125,7 +131,18 @@ input[type='radio']:checked:after {
     background-color: rosybrown;
     float: left;
     width: 135px;
+    height: 100px;
 }
+
+/*tabella cornice*/
+table, th, td {
+    margin-left: 10%;
+    border: 5px solid black;
+}
+th, td {
+    padding-bottom: 16px;
+}
+
 
 
 /*Mobile*/
