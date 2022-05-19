@@ -20,6 +20,7 @@ header{
 
 /*riquadro sinistra con gli input*/
 #preFormLetter{
+    box-sizing: content-box;
     width: 50%;
     height: 100%;
     background-color: rgb(158, 202, 121);
@@ -39,7 +40,7 @@ header{
 /*riquadroper il form*/
 #row1{
     width: 100%;
-    margin: 20px;
+    margin: 0px;
 }
 
 /*cella input*/
@@ -136,14 +137,12 @@ input[type='radio']:checked:after {
 
 /*tabella cornice*/
 table, th, td {
-    margin-left: 10%;
+    margin: auto;
     border: 5px solid black;
 }
 th, td {
     padding-bottom: 16px;
 }
-
-
 
 /*Mobile*/
 /*Adattamento mobile*/
@@ -174,15 +173,23 @@ th, td {
 @media only screen and (max-width: 1000px) {
     #preFormLetter{
         width: 100%;
-    }
-    /* da rivedere  */
-    #row1{
-        width: 110%;
         margin: 0;
     }
-
-
     #word{
-        width: 100%;
+        width: 600%;
+    }
+
+    header{
+        padding-top: 5px;
+        font-size: 1em;
+        height: 20px;
+        box-sizing: content-box;
+    }
+    table{
+        padding: 0;
+        margin: 0;
+    }
+    #letter{
+        width: 110px;
     }
 }
