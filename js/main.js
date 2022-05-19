@@ -41,12 +41,15 @@ function myFunction(){
     ]
 
 
-
-    //in console arriva un oggetto 
-    console.log(word1);
-
-    //per test stampa in reccomended word l oggetto:
-  document.getElementById("testJson").innerHTML = JSON.stringify(word1);
+    fetch('http://localhost:9045/api/word', {
+      method: 'POST', // or 'PUT'
+      body: word1,
+      })
+      
+      fetch('http://localhost:9045/api/words', {
+      method: 'GET' // or 'PUT'
+      })
+    
 
 
 
