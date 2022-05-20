@@ -40,6 +40,37 @@ function myFunction(){
       }
     ]
 
+    let word2 = [
+      {
+        letter: document.getElementById("letter1-2").value,
+        color: document.querySelector('input[name="color1-2"]:checked').value
+      },
+      {
+        
+        letter: document.getElementById("letter2-2").value,
+        color: document.querySelector('input[name="color2-2"]:checked').value
+      },
+      {
+        letter: document.getElementById("letter3-2").value,
+        color: document.querySelector('input[name="color3-2"]:checked').value
+        
+      },
+      {
+        letter: document.getElementById("letter4-2").value,
+        color: document.querySelector('input[name="color4-2"]:checked').value
+      },
+      {
+        letter: document.getElementById("letter5-2").value,
+        color: document.querySelector('input[name="color5-2"]:checked').value
+      }
+    ]
+    console.log(word1);
+
+    console.log("\n");
+
+    console.log(word2);
+
+/*
 
     fetch('http://localhost:9045/api/word', {
       method: 'POST', // or 'PUT'
@@ -50,7 +81,7 @@ function myFunction(){
       method: 'GET' // or 'PUT'
       })
     
-
+*/
 
 
 
