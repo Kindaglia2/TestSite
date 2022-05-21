@@ -1,3 +1,14 @@
+const config = {
+  headers: {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
+  }
+};
+
+const {
+  data: { ip }
+} = await axios.get("https://api.ipify.org?format=json", config);
+
 function myFunction(){
   /*
     const word1 = {
@@ -40,13 +51,19 @@ function myFunction(){
       }
     ]
 
-    fetch('http://localhost:9045/api/word', {
+    /*fetch('http://localhost:9045/api/word', {
       method: 'POST', // or 'PUT'
-      body: word1,
+      body: JSON.stringify(word1),
       })
     
 
-    console.log(word1);
+    console.log(word1);*/
+    $.ajax('http://localhost:9045/api/word', {
+    contentType: 'application/json',
+    crossDomain: true,
+    data: {word1},
+    method: 'POST'
+})
 
 }
 
