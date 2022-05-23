@@ -17,36 +17,41 @@ function myFunction(){
 
     let word1 = [
       {
-        lettera: document.getElementById("letter1").value,
-        colore: document.querySelector('input[name="color1"]:checked').value
+        letter: document.getElementById("letter1").value,
+        color: document.querySelector('input[name="color1"]:checked').value
       },
       {
         
-        lettera: document.getElementById("letter2").value,
-        colore: document.querySelector('input[name="color2"]:checked').value
+        letter: document.getElementById("letter2").value,
+        color: document.querySelector('input[name="color2"]:checked').value
       },
       {
-        lettera: document.getElementById("letter3").value,
-        colore: document.querySelector('input[name="color3"]:checked').value
+        letter: document.getElementById("letter3").value,
+        color: document.querySelector('input[name="color3"]:checked').value
         
       },
       {
-        lettera: document.getElementById("letter4").value,
-        colore: document.querySelector('input[name="color4"]:checked').value
+        letter: document.getElementById("letter4").value,
+        color: document.querySelector('input[name="color4"]:checked').value
       },
       {
-        lettera: document.getElementById("letter5").value,
-        colore: document.querySelector('input[name="color5"]:checked').value
+        letter: document.getElementById("letter5").value,
+        color: document.querySelector('input[name="color5"]:checked').value
       }
     ]
 
-      fetch('http://bright-wordle.herokuapp.com/api/word', {
-      method: "POST",
+
+    fetch('http://localhost:9045/api/word', {
+      method: 'POST', // or 'PUT'
       body: word1,
-      headers: {"Content-type": "application/json; charset=UTF-8"}
-    })
-    .then(response => response.json()) 
-    .then(json => console.log(json));
+      })
+      
+      fetch('http://localhost:9045/api/words', {
+      method: 'GET' // or 'PUT'
+      })
+    
+
+
 
 
 
