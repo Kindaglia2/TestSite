@@ -12,8 +12,13 @@ async function getWord() {
 async function renderWords() {
   let wordNew = await getWord();
   console.log(wordNew);
-  document.getElementById("indizzi").innerHTML = JSON.stringify(wordNew);
-  ;
+  
+  //trasforma il json in una stringa più leggibile con solo le parole
+  let str = ""
+  wordNew.forEach( obj =>{ Object.values(obj).forEach( (val, key) =>{  str+=''+val+''; key!=2?str+=',\n':str+='\n\n' })} )
+  console.log(str)
+  document.getElementById("indizzi").innerHTML = str;
+
   return wordNew;
 }
 
@@ -28,7 +33,11 @@ async function resetIndizzi() {
       console.log(error);
   }
 }
+//reset div parole
+function resetIndizziInizio(){
+  document.getElementById("inizio").innerHTML = "Parole consigliate per iniziare";
 
+}
 //bottone prima parola, manda e riceve le soluzioni
 function firsWord(){
 
@@ -71,6 +80,8 @@ function firsWord(){
   })
   console.log(getWord()); //log per test
   renderWords();
+
+  document.getElementById("inizio").innerHTML = "Indizzi per indovinare";
 }
 
 
