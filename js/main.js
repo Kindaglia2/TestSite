@@ -36,8 +36,21 @@ async function resetIndizzi() {
 //reset div parole
 function resetIndizziInizio(){
   document.getElementById("inizio").innerHTML = "Parole consigliate per iniziare";
-
+  document.getElementById("indizzi").innerHTML = "amaro, aroma, aereo, reato, torto,\n"+
+  " sotto, tatto, osare, torta, ratto,\n"+
+  " onore, stato, rosso, sorso, aceto, \n"+
+  "trono, atrio, sosta, costo, tanto, \n"+
+  " corso, poeta, arena, opera, porto";
 }
+
+//raggruppa i reset
+function allReset(){
+  resetIndizzi();
+  resetIndizziInizio();
+}
+
+
+
 //bottone prima parola, manda e riceve le soluzioni
 function firsWord(){
 
