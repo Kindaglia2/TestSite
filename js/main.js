@@ -47,6 +47,7 @@ function resetIndizziInizio(){
 function allReset(){
   resetIndizzi();
   resetIndizziInizio();
+
 }
 
 
