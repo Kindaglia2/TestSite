@@ -1,3 +1,13 @@
+
+//test
+move=(fromtxt,totxt)=>{
+  var length = fromtxt.length;
+  var maxlength = fromtxt.getAttribute(maxlength);
+  if(length == maxlength){
+    document.getElementById(totxt).focus();
+  }
+}
+
 //fa la chiamata get  
 async function getWord() {
   let url = 'https://bright-wordle.herokuapp.com/api/words';
