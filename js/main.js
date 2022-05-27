@@ -1,5 +1,6 @@
 
 //test
+
 move=(fromtxt,totxt)=>{
   var length = fromtxt.length;
   var maxlength = fromtxt.getAttribute(maxlength);
@@ -7,6 +8,8 @@ move=(fromtxt,totxt)=>{
     document.getElementById(totxt).focus();
   }
 }
+
+
 
 //fa la chiamata get  
 async function getWord() {
@@ -27,7 +30,7 @@ async function renderWords() {
   let str = ""
   wordNew.forEach(obj => { Object.values(obj).forEach((val, key) => { str += '' + val + ''; key != 2 ? str += ',\n' : str += '\n\n' }) })
   console.log(str)
-  document.getElementById("indizzi").innerHTML = str;
+  document.getElementById("indizi").innerHTML = str;
 
   return wordNew;
 }
@@ -46,7 +49,7 @@ async function resetIndizzi() {
 //reset div parole
 function resetIndizziInizio() {
   document.getElementById("inizio").innerHTML = "Parole consigliate per iniziare";
-  document.getElementById("indizzi").innerHTML = "amaro, aroma, aereo, reato, torto,\n" +
+  document.getElementById("indizi").innerHTML = "amaro, aroma, aereo, reato, torto,\n" +
     " sotto, tatto, osare, torta, ratto,\n" +
     " onore, stato, rosso, sorso, aceto, \n" +
     "trono, atrio, sosta, costo, tanto, \n" +
@@ -106,7 +109,7 @@ function firsWord() {
   console.log(getWord()); //log per test
   renderWords();
 
-  document.getElementById("inizio").innerHTML = "Indizzi per indovinare";
+  document.getElementById("inizio").innerHTML = "Indizi per indovinare";
 }
 
 
