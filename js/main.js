@@ -61,7 +61,6 @@ function allReset() {
   resetIndizzi();
   resetIndizziInizio();
   //per ora fa soolo un refresh della pagina per resettare gli input
-  location.reload();
 }
 
 
