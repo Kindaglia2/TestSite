@@ -1,7 +1,6 @@
 
 //funziona con la prima riga (per altre righe boh)
 var $inp = $(".passInput");
-
 $inp.on({
  input: function(ev) {
   if(this.value) {
@@ -15,6 +14,9 @@ $inp.on({
   }
  }
 });
+
+//test seconda riga
+
 
 
 //fa la chiamata get  
