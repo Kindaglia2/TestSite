@@ -1,14 +1,20 @@
 
-//test
+//funziona con la prima riga (per altre righe boh)
+var $inp = $(".passInput");
 
-move=(fromtxt,totxt)=>{
-  var length = fromtxt.length;
-  var maxlength = fromtxt.getAttribute(maxlength);
-  if(length == maxlength){
-    document.getElementById(totxt).focus();
+$inp.on({
+ input: function(ev) {
+  if(this.value) {
+    $inp.eq($inp.index(this) + 1).focus();
   }
-}
-
+ },
+ keydown: function(ev) {
+  var i = $inp.index(this);
+  if(ev.which===8 && !this.value && i) {
+    $inp.eq(i - 1).focus();
+  }
+ }
+});
 
 
 //fa la chiamata get  
@@ -25,14 +31,11 @@ async function getWord() {
 async function renderWords() {
   let wordNew = await getWord();
   console.log(wordNew);
-
   //trasforma il json in una stringa più leggibile con solo le parole
   let str = ""
   wordNew.forEach(obj => { Object.values(obj).forEach((val, key) => { str += '' + val + ''; key != 2 ? str += ',\n' : str += '\n\n' }) })
   console.log(str)
   document.getElementById("indizi").innerHTML = str;
-
-  return wordNew;
 }
 
 //bottone reset "partita"
@@ -60,7 +63,8 @@ function resetIndizziInizio() {
 function allReset() {
   resetIndizzi();
   resetIndizziInizio();
-  //per ora fa soolo un refresh della pagina per resettare gli input
+  //TEST reset campi
+  $(':input').val('');
 }
 
 
