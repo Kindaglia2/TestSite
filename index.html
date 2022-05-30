@@ -58,17 +58,12 @@
                   <input class="form-control passInput bg-secondary"   type="text" maxlength="1"   id="letter5"  onblur="testUppercase5()">
                 </div>
               </td>
-              <td>
-                <div class="col-xl-1">
-                  <button type="button" class="btn btn-success" onclick="firsWord()">Invio</button>
-                </div>
-              </td>
             </tr>
 
             <td>
               <!-- primi 5 radio -->
               <div class="btn-group noborder">
-                <input type="radio" class="btn-check" name="color1" id="1p1l" autocomplete="off" value="grigio" onclick="addWhite()" checked>
+                <input type="radio" class="btn-check" name="color1" id="1p1l" autocomplete="off" value="grigio" onclick="addGray()" checked>
                 <label class="btn btn-outline-secondary" for="1p1l"></label>
 
                 <input type="radio" class="btn-check" name="color1" id="2p1l" autocomplete="off" value="giallo"  onclick="addOrange1()">
@@ -80,7 +75,7 @@
             </td>
             <td>
               <div class="btn-group noborder">
-                <input type="radio" class="btn-check" name="color2" id="4p1l" autocomplete="off" value="grigio"  onclick="addWhite2()" checked>
+                <input type="radio" class="btn-check" name="color2" id="4p1l" autocomplete="off" value="grigio"  onclick="addGray2()" checked>
                 <label class="btn btn-outline-secondary" for="4p1l"></label>
 
                 <input type="radio" class="btn-check" name="color2" id="5p1l" autocomplete="off" value="giallo"  onclick="addOrange2()">
@@ -92,7 +87,7 @@
             </td>
             <td>
               <div class="btn-group noborder">
-                <input type="radio" class="btn-check" name="color3" id="7p1l" autocomplete="off" value="grigio" onclick="addWhite3()" checked>
+                <input type="radio" class="btn-check" name="color3" id="7p1l" autocomplete="off" value="grigio" onclick="addGray3()" checked>
                 <label class="btn btn-outline-secondary" for="7p1l"></label>
 
                 <input type="radio" class="btn-check" name="color3" id="8p1l" autocomplete="off" value="giallo" onclick="addOrange3()">
@@ -104,7 +99,7 @@
             </td>
             <td>
               <div class="btn-group noborder">
-                <input type="radio" class="btn-check" name="color4" id="10p1l" autocomplete="off" value="grigio" onclick="addWhite4()"
+                <input type="radio" class="btn-check" name="color4" id="10p1l" autocomplete="off" value="grigio" onclick="addGray4()"
                   checked>
                 <label class="btn btn-outline-secondary" for="10p1l"></label>
 
@@ -117,7 +112,7 @@
             </td>
             <td>
               <div class="btn-group noborder">
-                <input type="radio" class="btn-check" name="color5" id="13p1l" autocomplete="off" value="grigio" onclick="addWhite5()"
+                <input type="radio" class="btn-check" name="color5" id="13p1l" autocomplete="off" value="grigio" onclick="addGray5()"
                   checked>
                 <label class="btn btn-outline-secondary" for="13p1l"></label>
 
@@ -141,33 +136,28 @@
             <tr>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput2 bg-secondary" type="text" maxlength="1" id="letter1-2">
+                  <input class="form-control passInput2 bg-secondary" type="text" maxlength="1" id="letter1-2" onblur="testUppercase12()">
                 </div>
               </td>
 
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput2 bg-secondary" type="text" maxlength="1" id="letter2-2">
+                  <input class="form-control passInput2 bg-secondary" type="text" maxlength="1" id="letter2-2" onblur="testUppercase22()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput2 bg-secondary" type="text" maxlength="1" id="letter3-2">
+                  <input class="form-control passInput2 bg-secondary" type="text" maxlength="1" id="letter3-2" onblur="testUppercase32()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput2 bg-secondary" type="text" maxlength="1" id="letter4-2">
+                  <input class="form-control passInput2 bg-secondary" type="text" maxlength="1" id="letter4-2" onblur="testUppercase42()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput2 bg-secondary" type="text" maxlength="1" id="letter5-2">
-                </div>
-              </td>
-              <td>
-                <div class="col-xl-1">
-                  <button type="button" class="btn btn-success" onclick="secondWord()">Invio</button>
+                  <input class="form-control passInput2 bg-secondary" type="text" maxlength="1" id="letter5-2" onblur="testUppercase52()">
                 </div>
               </td>
             </tr>
@@ -245,33 +235,28 @@
             <tr>
               <td>
                 <div class="col-xs-1 " style="max-width: 50px;">
-                  <input class="form-control passInput3 bg-secondary" type="text" maxlength="1" id="letter1-3">
+                  <input class="form-control passInput3 bg-secondary" type="text" maxlength="1" id="letter1-3"  onblur="testUppercase13()">
                 </div>
               </td>
 
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput3 bg-secondary" type="text" maxlength="1" id="letter2-3">
+                  <input class="form-control passInput3 bg-secondary" type="text" maxlength="1" id="letter2-3"  onblur="testUppercase23()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput3 bg-secondary" type="text" maxlength="1" id="letter3-3">
+                  <input class="form-control passInput3 bg-secondary" type="text" maxlength="1" id="letter3-3"  onblur="testUppercase33()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput3 bg-secondary" type="text" maxlength="1" id="letter4-3">
+                  <input class="form-control passInput3 bg-secondary" type="text" maxlength="1" id="letter4-3"  onblur="testUppercase43()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput3 bg-secondary" type="text" maxlength="1" id="letter5-3">
-                </div>
-              </td>
-              <td>
-                <div class="col-xl-1">
-                  <button type="button" class="btn btn-success" onclick="thirdWord()">Invio</button>
+                  <input class="form-control passInput3 bg-secondary" type="text" maxlength="1" id="letter5-3"  onblur="testUppercase53()">
                 </div>
               </td>
             </tr>
@@ -350,33 +335,28 @@
             <tr>
               <td>
                 <div class="col-xs-1 " style="max-width: 50px;">
-                  <input class="form-control passInput4 bg-secondary" type="text" maxlength="1" id="letter1-4">
+                  <input class="form-control passInput4 bg-secondary" type="text" maxlength="1" id="letter1-4" onblur="testUppercase14()">
                 </div>
               </td>
 
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput4 bg-secondary" type="text" maxlength="1" id="letter2-4">
+                  <input class="form-control passInput4 bg-secondary" type="text" maxlength="1" id="letter2-4" onblur="testUppercase24()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput4 bg-secondary" type="text" maxlength="1" id="letter3-4">
+                  <input class="form-control passInput4 bg-secondary" type="text" maxlength="1" id="letter3-4" onblur="testUppercase34()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput4 bg-secondary" type="text" maxlength="1" id="letter4-4">
+                  <input class="form-control passInput4 bg-secondary" type="text" maxlength="1" id="letter4-4" onblur="testUppercase44()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput4 bg-secondary" type="text" maxlength="1" id="letter5-4">
-                </div>
-              </td>
-              <td>
-                <div class="col-xl-1">
-                  <button type="button" class="btn btn-success" onclick="fourthWord()">Invio</button>
+                  <input class="form-control passInput4 bg-secondary" type="text" maxlength="1" id="letter5-4" onblur="testUppercase54()">
                 </div>
               </td>
             </tr>
@@ -455,33 +435,28 @@
             <tr>
               <td>
                 <div class="col-xs-1 " style="max-width: 50px;">
-                  <input class="form-control passInput5 bg-secondary" type="text" maxlength="1" id="letter1-5">
+                  <input class="form-control passInput5 bg-secondary" type="text" maxlength="1" id="letter1-5" onblur="testUppercase15()">
                 </div>
               </td>
 
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput5 bg-secondary" type="text" maxlength="1" id="letter2-5">
+                  <input class="form-control passInput5 bg-secondary" type="text" maxlength="1" id="letter2-5" onblur="testUppercase25()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput5 bg-secondary" type="text" maxlength="1" id="letter3-5">
+                  <input class="form-control passInput5 bg-secondary" type="text" maxlength="1" id="letter3-5" onblur="testUppercase35()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput5 bg-secondary" type="text" maxlength="1" id="letter4-5">
+                  <input class="form-control passInput5 bg-secondary" type="text" maxlength="1" id="letter4-5" onblur="testUppercase45()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput5 bg-secondary" type="text" maxlength="1" id="letter5-5">
-                </div>
-              </td>
-              <td>
-                <div class="col-xl-1">
-                  <button type="button" class="btn btn-success" onclick="fifthWord()">Invio</button>
+                  <input class="form-control passInput5 bg-secondary" type="text" maxlength="1" id="letter5-5" onblur="testUppercase55()">
                 </div>
               </td>
             </tr>
