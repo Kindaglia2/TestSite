@@ -129,7 +129,6 @@ async function resetIndizzi() {
   try {
     let res = await fetch(url);
     console.log("nice reset");
-    return await res.json();
   } catch (error) {
     console.log(error);
   }
@@ -148,9 +147,11 @@ function resetIndizziInizio() {
 function allReset() {
   resetIndizzi();
   resetIndizziInizio();
+  count = 0;
   //TEST reset campi
-  $(':input').val('');
-}
+   // $(':input').val('');
+   
+  }
 
 
 
