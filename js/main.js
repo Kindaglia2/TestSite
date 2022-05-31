@@ -243,9 +243,10 @@ function allReset() {
   resetIndizziInizio();
   count = 0;
   //TEST reset campi
-   // $(':input').val('');
+  // $(':input').val('');
+  document.getElementById("13p5l").click();
    
-  }
+}
 
 
 
