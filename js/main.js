@@ -612,81 +612,328 @@ function sendAllWord(){
 //colore pulsanti seconda riga 
 {
   //colore pulsanti prima lettera 
-  function addOrange1(){
-    orange = document.getElementById("letter1");
+  function addOrange12(){
+    orange = document.getElementById("letter1-2");
     orange.classList.remove("bg-secondary");
     orange.style.backgroundColor = 'orange';
   }
-  function addGreen1(){
-    green1 = document.getElementById("letter1");
+  function addGreen12(){
+    green1 = document.getElementById("letter1-2");
     green1.classList.remove("bg-secondary");
     green1.style.backgroundColor = 'green';
   }
-  function addWhite(){
-    grey1 = document.getElementById("letter1");
+  function addGray12(){
+    grey1 = document.getElementById("letter1-2");
     grey1.classList.add("bg-secondary");
   }
   
   //colore pulsanti seconda lettera 
-  function addOrange2(){
-    orange = document.getElementById("letter2");
+  function addOrange22(){
+    orange = document.getElementById("letter2-2");
     orange.classList.remove("bg-secondary");
     orange.style.backgroundColor = 'orange';
   }
-  function addGreen2(){
-    green1 = document.getElementById("letter2");
+  function addGreen22(){
+    green1 = document.getElementById("letter2-2");
     green1.classList.remove("bg-secondary");
     green1.style.backgroundColor = 'green';
   }
-  function addWhite2(){
-    grey1 = document.getElementById("letter2");
+  function addGray22(){
+    grey1 = document.getElementById("letter2-2");
     grey1.classList.add("bg-secondary");
   }
   
   
   //colore pulsanti terza lettera 
-  function addOrange3(){
-    orange = document.getElementById("letter3");
+  function addOrange32(){
+    orange = document.getElementById("letter3-2");
     orange.classList.remove("bg-secondary");
     orange.style.backgroundColor = 'orange';
   }
-  function addGreen3(){
-    green1 = document.getElementById("letter3");
+  function addGreen32(){
+    green1 = document.getElementById("letter3-2");
     green1.classList.remove("bg-secondary");
     green1.style.backgroundColor = 'green';
   }
-  function addWhite3(){
-    grey1 = document.getElementById("letter3");
+  function addGray32(){
+    grey1 = document.getElementById("letter3-2");
     grey1.classList.add("bg-secondary");
   }
   //colore pulsanti quarta lettera 
-  function addOrange4(){
-    orange = document.getElementById("letter4");
+  function addOrange42(){
+    orange = document.getElementById("letter4-2");
     orange.classList.remove("bg-secondary");
     orange.style.backgroundColor = 'orange';
   }
-  function addGreen4(){
-    green1 = document.getElementById("letter4");
+  function addGreen42(){
+    green1 = document.getElementById("letter4-2");
     green1.classList.remove("bg-secondary");
     green1.style.backgroundColor = 'green';
   }
-  function addWhite4(){
-    grey1 = document.getElementById("letter4");
+  function addGray42(){
+    grey1 = document.getElementById("letter4-2");
     grey1.classList.add("bg-secondary");
   }
   //colore pulsanti quinta lettera 
-  function addOrange5(){
-    orange = document.getElementById("letter5");
+  function addOrange52(){
+    orange = document.getElementById("letter5-2");
     orange.classList.remove("bg-secondary");
     orange.style.backgroundColor = 'orange';
   }
-  function addGreen5(){
-    green1 = document.getElementById("letter5");
+  function addGreen52(){
+    green1 = document.getElementById("letter5-2");
     green1.classList.remove("bg-secondary");
     green1.style.backgroundColor = 'green';
   }
-  function addWhite5(){
-    grey1 = document.getElementById("letter5");
+  function addGray52(){
+    grey1 = document.getElementById("letter5-2");
     grey1.classList.add("bg-secondary");
   }
   }
+
+//colore pulsanti terza riga 
+{
+  //colore pulsanti prima lettera 
+  function addOrange13(){
+    orange = document.getElementById("letter1-3");
+    orange.classList.remove("bg-secondary");
+    orange.style.backgroundColor = 'orange';
+  }
+  function addGreen13(){
+    green1 = document.getElementById("letter1-3");
+    green1.classList.remove("bg-secondary");
+    green1.style.backgroundColor = 'green';
+  }
+  function addGray13(){
+    grey1 = document.getElementById("letter1-3");
+    grey1.classList.add("bg-secondary");
+  }
+  
+  //colore pulsanti seconda lettera 
+  function addOrange23(){
+    orange = document.getElementById("letter2-3");
+    orange.classList.remove("bg-secondary");
+    orange.style.backgroundColor = 'orange';
+  }
+  function addGreen23(){
+    green1 = document.getElementById("letter2-3");
+    green1.classList.remove("bg-secondary");
+    green1.style.backgroundColor = 'green';
+  }
+  function addGray23(){
+    grey1 = document.getElementById("letter2-3");
+    grey1.classList.add("bg-secondary");
+  }
+  
+  
+  //colore pulsanti terza lettera 
+  function addOrange33(){
+    orange = document.getElementById("letter3-3");
+    orange.classList.remove("bg-secondary");
+    orange.style.backgroundColor = 'orange';
+  }
+  function addGreen33(){
+    green1 = document.getElementById("letter3-3");
+    green1.classList.remove("bg-secondary");
+    green1.style.backgroundColor = 'green';
+  }
+  function addGray33(){
+    grey1 = document.getElementById("letter3-3");
+    grey1.classList.add("bg-secondary");
+  }
+  //colore pulsanti quarta lettera 
+  function addOrange43(){
+    orange = document.getElementById("letter4-3");
+    orange.classList.remove("bg-secondary");
+    orange.style.backgroundColor = 'orange';
+  }
+  function addGreen43(){
+    green1 = document.getElementById("letter4-3");
+    green1.classList.remove("bg-secondary");
+    green1.style.backgroundColor = 'green';
+  }
+  function addGray43(){
+    grey1 = document.getElementById("letter4-3");
+    grey1.classList.add("bg-secondary");
+  }
+  //colore pulsanti quinta lettera 
+  function addOrange53(){
+    orange = document.getElementById("letter5-3");
+    orange.classList.remove("bg-secondary");
+    orange.style.backgroundColor = 'orange';
+  }
+  function addGreen53(){
+    green1 = document.getElementById("letter5-3");
+    green1.classList.remove("bg-secondary");
+    green1.style.backgroundColor = 'green';
+  }
+  function addGray53(){
+    grey1 = document.getElementById("letter5-3");
+    grey1.classList.add("bg-secondary");
+  }
+  }
+
+//colore pulsanti quarta riga 
+{
+  //colore pulsanti prima lettera 
+  function addOrange14(){
+    orange = document.getElementById("letter1-4");
+    orange.classList.remove("bg-secondary");
+    orange.style.backgroundColor = 'orange';
+  }
+  function addGreen14(){
+    green1 = document.getElementById("letter1-4");
+    green1.classList.remove("bg-secondary");
+    green1.style.backgroundColor = 'green';
+  }
+  function addGray14(){
+    grey1 = document.getElementById("letter1-4");
+    grey1.classList.add("bg-secondary");
+  }
+  
+  //colore pulsanti seconda lettera 
+  function addOrange24(){
+    orange = document.getElementById("letter2-4");
+    orange.classList.remove("bg-secondary");
+    orange.style.backgroundColor = 'orange';
+  }
+  function addGreen24(){
+    green1 = document.getElementById("letter2-4");
+    green1.classList.remove("bg-secondary");
+    green1.style.backgroundColor = 'green';
+  }
+  function addGray24(){
+    grey1 = document.getElementById("letter2-4");
+    grey1.classList.add("bg-secondary");
+  }
+  
+  
+  //colore pulsanti terza lettera 
+  function addOrange34(){
+    orange = document.getElementById("letter3-4");
+    orange.classList.remove("bg-secondary");
+    orange.style.backgroundColor = 'orange';
+  }
+  function addGreen34(){
+    green1 = document.getElementById("letter3-4");
+    green1.classList.remove("bg-secondary");
+    green1.style.backgroundColor = 'green';
+  }
+  function addGray34(){
+    grey1 = document.getElementById("letter3-4");
+    grey1.classList.add("bg-secondary");
+  }
+  //colore pulsanti quarta lettera 
+  function addOrange44(){
+    orange = document.getElementById("letter4-4");
+    orange.classList.remove("bg-secondary");
+    orange.style.backgroundColor = 'orange';
+  }
+  function addGreen44(){
+    green1 = document.getElementById("letter4-4");
+    green1.classList.remove("bg-secondary");
+    green1.style.backgroundColor = 'green';
+  }
+  function addGray44(){
+    grey1 = document.getElementById("letter4-4");
+    grey1.classList.add("bg-secondary");
+  }
+  //colore pulsanti quinta lettera 
+  function addOrange54(){
+    orange = document.getElementById("letter5-4");
+    orange.classList.remove("bg-secondary");
+    orange.style.backgroundColor = 'orange';
+  }
+  function addGreen54(){
+    green1 = document.getElementById("letter5-4");
+    green1.classList.remove("bg-secondary");
+    green1.style.backgroundColor = 'green';
+  }
+  function addGray54(){
+    grey1 = document.getElementById("letter5-4");
+    grey1.classList.add("bg-secondary");
+  }
+  }
+
+//colore pulsanti quinta riga 
+{
+  //colore pulsanti prima lettera 
+  function addOrange15(){
+    orange = document.getElementById("letter1-5");
+    orange.classList.remove("bg-secondary");
+    orange.style.backgroundColor = 'orange';
+  }
+  function addGreen15(){
+    green1 = document.getElementById("letter1-5");
+    green1.classList.remove("bg-secondary");
+    green1.style.backgroundColor = 'green';
+  }
+  function addGray15(){
+    grey1 = document.getElementById("letter1-5");
+    grey1.classList.add("bg-secondary");
+  }
+  
+  //colore pulsanti seconda lettera 
+  function addOrange25(){
+    orange = document.getElementById("letter2-5");
+    orange.classList.remove("bg-secondary");
+    orange.style.backgroundColor = 'orange';
+  }
+  function addGreen25(){
+    green1 = document.getElementById("letter2-5");
+    green1.classList.remove("bg-secondary");
+    green1.style.backgroundColor = 'green';
+  }
+  function addGray25(){
+    grey1 = document.getElementById("letter2-5");
+    grey1.classList.add("bg-secondary");
+  }
+  
+  
+  //colore pulsanti terza lettera 
+  function addOrange35(){
+    orange = document.getElementById("letter3-5");
+    orange.classList.remove("bg-secondary");
+    orange.style.backgroundColor = 'orange';
+  }
+  function addGreen35(){
+    green1 = document.getElementById("letter3-5");
+    green1.classList.remove("bg-secondary");
+    green1.style.backgroundColor = 'green';
+  }
+  function addGray35(){
+    grey1 = document.getElementById("letter3-5");
+    grey1.classList.add("bg-secondary");
+  }
+  //colore pulsanti quarta lettera 
+  function addOrange45(){
+    orange = document.getElementById("letter4-5");
+    orange.classList.remove("bg-secondary");
+    orange.style.backgroundColor = 'orange';
+  }
+  function addGreen45(){
+    green1 = document.getElementById("letter4-5");
+    green1.classList.remove("bg-secondary");
+    green1.style.backgroundColor = 'green';
+  }
+  function addGray45(){
+    grey1 = document.getElementById("letter4-5");
+    grey1.classList.add("bg-secondary");
+  }
+  //colore pulsanti quinta lettera 
+  function addOrange55(){
+    orange = document.getElementById("letter5-5");
+    orange.classList.remove("bg-secondary");
+    orange.style.backgroundColor = 'orange';
+  }
+  function addGreen55(){
+    green1 = document.getElementById("letter5-5");
+    green1.classList.remove("bg-secondary");
+    green1.style.backgroundColor = 'green';
+  }
+  function addGray55(){
+    grey1 = document.getElementById("letter5-5");
+    grey1.classList.add("bg-secondary");
+  }
+  }
+
