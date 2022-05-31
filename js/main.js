@@ -244,10 +244,14 @@ function allReset() {
   count = 0;
   //TEST reset campi
   // $(':input').val('');
-  document.getElementById("13p5l").click();
+
+  setTimeout(refresh,2000);
    
 }
-
+//set timeout per non refreshare subitssimo
+function refresh(){
+  location.reload();
+}
 
 
 //bottone prima parola, manda e riceve le soluzioni
