@@ -34,32 +34,32 @@
               <!-- prima riga 5 celle -->
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput bg-secondary"   type="text" maxlength="1"   id="letter1"  onblur="testUppercase()" >
+                  <input class="form-control passInput bg-secondary"   type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1"   id="letter1"  onblur="testUppercase()" >
                 </div>
               </td>
 
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput bg-secondary"   type="text" maxlength="1"   id="letter2" onblur="testUppercase2()">
+                  <input class="form-control passInput bg-secondary"   type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1"   id="letter2" onblur="testUppercase2()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput bg-secondary"   type="text" maxlength="1"   id="letter3"  onblur="testUppercase3()">
+                  <input class="form-control passInput bg-secondary"   type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1"   id="letter3"  onblur="testUppercase3()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput bg-secondary"   type="text" maxlength="1"   id="letter4"  onblur="testUppercase4()">
+                  <input class="form-control passInput bg-secondary"   type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1"   id="letter4"  onblur="testUppercase4()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput bg-secondary"   type="text" maxlength="1"   id="letter5"  onblur="testUppercase5()">
+                  <input class="form-control passInput bg-secondary"   type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1"   id="letter5"  onblur="testUppercase5()">
                 </div>
               </td>
             </tr>
-
+            <tr id="btn1">
             <td>
               <!-- primi 5 radio -->
               <div class="btn-group noborder">
@@ -133,39 +133,40 @@
 
 
             <!-- Seconda riga celle -->
-            <tr>
+            <tr class="check" id="tr1.1">
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput2 bg-secondary" type="text" maxlength="1" id="letter1-2" onblur="testUppercase12()">
+                  <input class="form-control passInput2 bg-secondary  " type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1" id="letter1-2" onblur="testUppercase12()">
                 </div>
               </td>
 
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput2 bg-secondary" type="text" maxlength="1" id="letter2-2" onblur="testUppercase22()">
+                  <input class="form-control passInput2 bg-secondary " type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1" id="letter2-2" onblur="testUppercase22()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput2 bg-secondary" type="text" maxlength="1" id="letter3-2" onblur="testUppercase32()">
+                  <input class="form-control passInput2 bg-secondary " type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1" id="letter3-2" onblur="testUppercase32()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput2 bg-secondary" type="text" maxlength="1" id="letter4-2" onblur="testUppercase42()">
+                  <input class="form-control passInput2 bg-secondary " type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1" id="letter4-2" onblur="testUppercase42()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput2 bg-secondary" type="text" maxlength="1" id="letter5-2" onblur="testUppercase52()">
+                  <input class="form-control passInput2 bg-secondary " type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1" id="letter5-2" onblur="testUppercase52()">
                 </div>
               </td>
             </tr>
+            <tr class="check" id="tr1.2">
             <td>
               <!-- Seconda riga input radio -->
               <div class="btn-group noborder">
                 <input type="radio" class="btn-check" name="color1-2" id="1p2l" autocomplete="off" value="grigio" onclick="addGray12()"
-                  checked>
+                  checked >
                 <label class="btn btn-outline-secondary" for="1p2l"></label>
 
                 <input type="radio" class="btn-check" name="color1-2" id="2p2l" autocomplete="off" value="giallo" onclick="addOrange12()">
@@ -232,35 +233,35 @@
 
 
             <!-- Terza riga celle -->
-            <tr>
+            <tr class="check" id="tr2.1">
               <td>
                 <div class="col-xs-1 " style="max-width: 50px;">
-                  <input class="form-control passInput3 bg-secondary" type="text" maxlength="1" id="letter1-3"  onblur="testUppercase13()">
+                  <input class="form-control passInput3 bg-secondary" type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1" id="letter1-3"  onblur="testUppercase13()">
                 </div>
               </td>
 
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput3 bg-secondary" type="text" maxlength="1" id="letter2-3"  onblur="testUppercase23()">
+                  <input class="form-control passInput3 bg-secondary" type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1" id="letter2-3"  onblur="testUppercase23()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput3 bg-secondary" type="text" maxlength="1" id="letter3-3"  onblur="testUppercase33()">
+                  <input class="form-control passInput3 bg-secondary" type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1" id="letter3-3"  onblur="testUppercase33()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput3 bg-secondary" type="text" maxlength="1" id="letter4-3"  onblur="testUppercase43()">
+                  <input class="form-control passInput3 bg-secondary" type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1" id="letter4-3"  onblur="testUppercase43()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput3 bg-secondary" type="text" maxlength="1" id="letter5-3"  onblur="testUppercase53()">
+                  <input class="form-control passInput3 bg-secondary" type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1" id="letter5-3"  onblur="testUppercase53()">
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr class="check" id="tr2.2"> 
               <td>
                 <!-- Terza riga input radio -->
                 <div class="btn-group noborder">
@@ -332,35 +333,35 @@
 
 
             <!-- Quarta riga celle -->
-            <tr>
+            <tr class="check" id="tr3.1">
               <td>
                 <div class="col-xs-1 " style="max-width: 50px;">
-                  <input class="form-control passInput4 bg-secondary" type="text" maxlength="1" id="letter1-4" onblur="testUppercase14()">
+                  <input class="form-control passInput4 bg-secondary" type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1" id="letter1-4" onblur="testUppercase14()">
                 </div>
               </td>
 
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput4 bg-secondary" type="text" maxlength="1" id="letter2-4" onblur="testUppercase24()">
+                  <input class="form-control passInput4 bg-secondary" type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1" id="letter2-4" onblur="testUppercase24()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput4 bg-secondary" type="text" maxlength="1" id="letter3-4" onblur="testUppercase34()">
+                  <input class="form-control passInput4 bg-secondary" type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1" id="letter3-4" onblur="testUppercase34()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput4 bg-secondary" type="text" maxlength="1" id="letter4-4" onblur="testUppercase44()">
+                  <input class="form-control passInput4 bg-secondary" type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1" id="letter4-4" onblur="testUppercase44()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput4 bg-secondary" type="text" maxlength="1" id="letter5-4" onblur="testUppercase54()">
+                  <input class="form-control passInput4 bg-secondary" type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1" id="letter5-4" onblur="testUppercase54()">
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr class="check" id="tr3.2">
               <td>
                 <!-- Quarta riga input radio -->
                 <div class="btn-group noborder">
@@ -432,35 +433,35 @@
 
 
             <!-- Quinta riga celle -->
-            <tr>
+            <tr class="check" id="tr4.1">
               <td>
                 <div class="col-xs-1 " style="max-width: 50px;">
-                  <input class="form-control passInput5 bg-secondary" type="text" maxlength="1" id="letter1-5" onblur="testUppercase15()">
+                  <input class="form-control passInput5 bg-secondary" type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1" id="letter1-5" onblur="testUppercase15()">
                 </div>
               </td>
 
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput5 bg-secondary" type="text" maxlength="1" id="letter2-5" onblur="testUppercase25()">
+                  <input class="form-control passInput5 bg-secondary" type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1" id="letter2-5" onblur="testUppercase25()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput5 bg-secondary" type="text" maxlength="1" id="letter3-5" onblur="testUppercase35()">
+                  <input class="form-control passInput5 bg-secondary" type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1" id="letter3-5" onblur="testUppercase35()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput5 bg-secondary" type="text" maxlength="1" id="letter4-5" onblur="testUppercase45()">
+                  <input class="form-control passInput5 bg-secondary" type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1" id="letter4-5" onblur="testUppercase45()">
                 </div>
               </td>
               <td>
                 <div class="col-xs-1" style="max-width: 50px;">
-                  <input class="form-control passInput5 bg-secondary" type="text" maxlength="1" id="letter5-5" onblur="testUppercase55()">
+                  <input class="form-control passInput5 bg-secondary" type="text" onkeydown="return /[a-z]/i.test(event.key)" maxlength="1" id="letter5-5" onblur="testUppercase55()">
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr class="check" id="tr4.2">
               <td>
                 <!-- Quinta riga input radio -->
                 <div class="btn-group noborder">

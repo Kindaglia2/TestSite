@@ -242,15 +242,7 @@ function allReset() {
   resetIndizzi();
   resetIndizziInizio();
   count = 0;
-  //TEST reset campi
-  // $(':input').val('');
-
-  setTimeout(refresh,2000);
-   
-}
-//set timeout per non refreshare subitssimo
-function refresh(){
-  location.reload();
+  location.reload();  
 }
 
 
@@ -336,7 +328,7 @@ function secondWord() {
   //log per test
   console.log(word2);
 
-  //invia la prima parola
+  //invia la seconda parola
   fetch('https://bright-wordle.herokuapp.com/api/word', {
     method: 'POST',
     headers: {
@@ -381,7 +373,7 @@ function thirdWord() {
   //log per test
   console.log(word3);
 
-  //invia la prima parola
+  //invia la terza parola
   fetch('https://bright-wordle.herokuapp.com/api/word', {
     method: 'POST',
     headers: {
@@ -427,7 +419,7 @@ function fourthWord() {
   //log per test
   console.log(word4);
 
-  //invia la prima parola
+  //invia la quarta parola
   fetch('https://bright-wordle.herokuapp.com/api/word', {
     method: 'POST',
     headers: {
@@ -474,7 +466,7 @@ function fifthWord() {
   //log per test
   console.log(word5);
 
-  //invia la prima parola
+  //invia la quinta parola
   fetch('https://bright-wordle.herokuapp.com/api/word', {
     method: 'POST',
     headers: {
@@ -500,32 +492,153 @@ $('.container').on('keydown', 'input', function(e) {
   }
 });
 
+
+
+//test check se effettivamente è stato tutti inserito correttamente
+
+//chek prima parola 
+function word1check(){
+  let a = document.getElementById("letter1").value;
+  let b = document.getElementById("letter2").value;
+  let c = document.getElementById("letter3").value;
+  let d = document.getElementById("letter4").value;
+  let e = document.getElementById("letter5").value;
+
+  if( (a && b && c && d && e ) != "" ){
+    return true;
+  }else{
+    return false;
+  }
+}
+//chek seconda parola 
+function word2check(){
+  let a = document.getElementById("letter1-2").value;
+  let b = document.getElementById("letter2-2").value;
+  let c = document.getElementById("letter3-2").value;
+  let d = document.getElementById("letter4-2").value;
+  let e = document.getElementById("letter5-2").value;
+
+  if( (a && b && c && d && e ) != "" ){
+    return true;
+  }else{
+    return false;
+  }
+}
+//chek terza parola 
+function word3check(){
+  let a = document.getElementById("letter1-3").value;
+  let b = document.getElementById("letter2-3").value;
+  let c = document.getElementById("letter3-3").value;
+  let d = document.getElementById("letter4-3").value;
+  let e = document.getElementById("letter5-3").value;
+
+  if( (a && b && c && d && e ) != "" ){
+    return true;
+  }else{
+    return false;
+  }
+}
+//chek quarta parola 
+function word4check(){
+  let a = document.getElementById("letter1-4").value;
+  let b = document.getElementById("letter2-4").value;
+  let c = document.getElementById("letter3-4").value;
+  let d = document.getElementById("letter4-4").value;
+  let e = document.getElementById("letter5-4").value;
+
+  if( (a && b && c && d && e ) != "" ){
+    return true;
+  }else{
+    return false;
+  }
+}
+//chek quinta parola 
+function word5check(){
+  let a = document.getElementById("letter1-5").value;
+  let b = document.getElementById("letter2-5").value;
+  let c = document.getElementById("letter3-5").value;
+  let d = document.getElementById("letter4-5").value;
+  let e = document.getElementById("letter5-5").value;
+
+  if( (a && b && c && d && e ) != "" ){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+
 //funzione del tasto invio che viene richiamata sia con enter che con la pressione del tasto
 function sendAllWord(){
   count++;
   console.log(count);
+
   if(count == 1){
-    console.log("mando prima parola");
-    firsWord();
+    //test per fare una validazione:
+    if (word1check() == true) {
+      console.log("mando prima parola");
+      firsWord();
+      document.getElementById("tr1.1").classList.remove("check");
+      document.getElementById("tr1.2").classList.remove("check");
+      document.getElementById("btn1").classList.add("check");
+    }else{
+      alert("Mancano una o più lettere!!");
+      count--;
+    }
   }
+
   if(count == 2){
-    console.log("mando seconda parola");
-    secondWord()
+    if (word2check() == true) {
+      console.log("mando seconda parola");
+      secondWord()
+    document.getElementById("tr2.1").classList.remove("check");
+    document.getElementById("tr2.2").classList.remove("check");
+    document.getElementById("tr1.2").classList.add("check");
+    }else{
+      alert("Mancano una o più lettere!!");
+      count--;
+    }
   }
   if(count == 3){
-    console.log("mando terza parola");
-    thirdWord();
+    if (word3check() == true) {
+      console.log("mando terza parola");
+      thirdWord();
+      document.getElementById("tr3.1").classList.remove("check");
+      document.getElementById("tr3.2").classList.remove("check");
+      document.getElementById("tr2.2").classList.add("check");
+    }else{
+      alert("Mancano una o più lettere!!");
+      count--;
+    }
   }
+
   if(count == 4){
-    console.log("mando quarta parola");
-    fourthWord();
+    if (word4check() == true) {
+      console.log("mando quarta parola");
+      fourthWord();
+      document.getElementById("tr4.1").classList.remove("check");
+      document.getElementById("tr4.2").classList.remove("check");
+      document.getElementById("tr3.2").classList.add("check");
+    }else{
+      alert("Mancano una o più lettere!!");
+      count--;
+    }
   }
+
   if(count == 5){
-    console.log("mando quinta parola");
-    fifthWord();
+    if (word5check() == true) {
+      console.log("mando quinta parola");
+      fifthWord();
+    }else{
+      alert("Mancano una o più lettere!!");
+      count--;
+    }
+    
   }
+
   if (count == 6) {
-    console.log("troppi tentantivi");
+    alert("Hai raggiunto il limite, per ricominicare la partita premi RESET");
+    count--;
   }
 
 }
