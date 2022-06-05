@@ -198,7 +198,7 @@ function testUppercase5() {
 
 //fa la chiamata get  
 async function getWord() {
-  let url = 'https://bright-wordle.herokuapp.com/api/words';
+  let url = 'https://wordle-test.herokuapp.com/api/words';
   try {
     let res = await fetch(url);
     return await res.json();
@@ -209,7 +209,7 @@ async function getWord() {
 //stampa l obj restituito dal get
 async function renderWords() {
   let wordNew = await getWord();
-  console.log(wordNew);
+  //console.log(wordNew);
   //trasforma il json in una stringa più leggibile con solo le parole
   let str = ""
   wordNew.forEach(obj => { Object.values(obj).forEach((val, key) => { str += '' + val + ''; key != 2 ? str += ',\n' : str += '\n\n' }) })
@@ -219,7 +219,7 @@ async function renderWords() {
 
 //bottone reset "partita"
 async function resetIndizzi() {
-  let url = 'https://bright-wordle.herokuapp.com/api/reset';
+  let url = 'https://wordle-test.herokuapp.com/api/reset';
   try {
     let res = await fetch(url);
     console.log("nice reset");
@@ -242,12 +242,12 @@ function allReset() {
   resetIndizzi();
   resetIndizziInizio();
   count = 0;
-  location.reload();  
+  //location.reload();  
 }
 
 
 //bottone prima parola, manda e riceve le soluzioni
-function firsWord() {
+async function firsWord() {
 
   //crea l oggetto con i dati dal form (prima parola)
   let word1 = [
@@ -279,15 +279,15 @@ function firsWord() {
   console.log(word1);
 
   //invia la prima parola
-  fetch('https://bright-wordle.herokuapp.com/api/word', {
+  let response=await fetch('https://wordle-test.herokuapp.com/api/word', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(word1),
-  })
-  console.log(getWord()); //log per test
-  renderWords();
+  });
+  console.log(response.status);
+  await renderWords();
 
   document.getElementById("inizio").innerHTML = "Indizi per indovinare";
 }
@@ -297,7 +297,7 @@ function firsWord() {
 
 
 //bottone secodna parola, manda e riceve le soluzioni
-function secondWord() {
+async function secondWord() {
 
   //crea l oggetto con i dati dal form (prima parola)
   let word2 = [
@@ -329,20 +329,21 @@ function secondWord() {
   console.log(word2);
 
   //invia la seconda parola
-  fetch('https://bright-wordle.herokuapp.com/api/word', {
+  let response=await fetch('https://wordle-test.herokuapp.com/api/word', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(word2),
-  })
-  console.log(getWord()); //log per test
-  renderWords();
+  });
+  await renderWords();
+  //console.log(getWord()); //log per test
+  
 }
 
 
 //bottone terza parola, manda e riceve le soluzioni
-function thirdWord() {
+async function thirdWord() {
 
   //crea l oggetto con i dati dal form (prima parola)
   let word3 = [
@@ -374,21 +375,21 @@ function thirdWord() {
   console.log(word3);
 
   //invia la terza parola
-  fetch('https://bright-wordle.herokuapp.com/api/word', {
+  await fetch('https://wordle-test.herokuapp.com/api/word', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(word3),
   })
-  console.log(getWord()); //log per test
-  renderWords();
+  //console.log(getWord()); //log per test
+  await renderWords();
 }
 
 
 
 //bottone quarta parola, manda e riceve le soluzioni
-function fourthWord() {
+async function fourthWord() {
 
   //crea l oggetto con i dati dal form (prima parola)
   let word4 = [
@@ -420,22 +421,22 @@ function fourthWord() {
   console.log(word4);
 
   //invia la quarta parola
-  fetch('https://bright-wordle.herokuapp.com/api/word', {
+  await fetch('https://wordle-test.herokuapp.com/api/word', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(word4),
   })
-  console.log(getWord()); //log per test
-  renderWords();
+  //console.log(getWord()); //log per test
+  await renderWords();
 }
 
 
 
 
 //bottone quarta parola, manda e riceve le soluzioni
-function fifthWord() {
+async function fifthWord() {
 
   //crea l oggetto con i dati dal form (prima parola)
   let word5 = [
@@ -467,15 +468,15 @@ function fifthWord() {
   console.log(word5);
 
   //invia la quinta parola
-  fetch('https://bright-wordle.herokuapp.com/api/word', {
+  await fetch('https://wordle-test.herokuapp.com/api/word', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(word5),
   })
-  console.log(getWord()); //log per test
-  renderWords();
+  //console.log(getWord()); //log per test
+  await renderWords();
 }
 
 
