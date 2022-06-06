@@ -218,7 +218,7 @@ async function renderWords() {
 }
 
 //bottone reset "partita"
-async function resetIndizzi() {
+async function resetIndizi() {
   let url = 'https://wordle-test.herokuapp.com/api/reset';
   try {
     let res = await fetch(url);
@@ -228,7 +228,7 @@ async function resetIndizzi() {
   }
 }
 //reset div parole
-function resetIndizziInizio() {
+function resetIndiziInizio() {
   document.getElementById("inizio").innerHTML = "Parole consigliate per iniziare";
   document.getElementById("indizi").innerHTML = "amaro, aroma, aereo, reato, torto,\n" +
     " sotto, tatto, osare, torta, ratto,\n" +
@@ -283,8 +283,8 @@ function resetInput (){
 
 //raggruppa i reset
 function allReset() {
-  resetIndizzi();
-  resetIndizziInizio();
+  resetIndizi();
+  resetIndiziInizio();
   count = 0;
   resetInput();
 
@@ -337,10 +337,6 @@ async function firsWord() {
   document.getElementById("inizio").innerHTML = "Indizi per indovinare";
 }
 
-
-
-
-
 //bottone secodna parola, manda e riceve le soluzioni
 async function secondWord() {
 
@@ -386,7 +382,6 @@ async function secondWord() {
   
 }
 
-
 //bottone terza parola, manda e riceve le soluzioni
 async function thirdWord() {
 
@@ -430,8 +425,6 @@ async function thirdWord() {
   //console.log(getWord()); //log per test
   await renderWords();
 }
-
-
 
 //bottone quarta parola, manda e riceve le soluzioni
 async function fourthWord() {
@@ -477,9 +470,6 @@ async function fourthWord() {
   await renderWords();
 }
 
-
-
-
 //bottone quarta parola, manda e riceve le soluzioni
 async function fifthWord() {
 
@@ -523,7 +513,6 @@ async function fifthWord() {
   //console.log(getWord()); //log per test
   await renderWords();
 }
-
 
 
 //test per togliere i 5 pulsanti invio e fare tutto con un solo pulsante e tasto invio
