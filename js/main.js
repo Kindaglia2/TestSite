@@ -237,12 +237,57 @@ function resetIndizziInizio() {
     " corso, poeta, arena, opera, porto";
 }
 
+//reset field
+function resetInput (){
+  $(':input').val('');
+  document.getElementById("btn1").classList.remove("check");
+  document.getElementById("1p1l").click();
+  document.getElementById("4p1l").click();
+  document.getElementById("7p1l").click();
+  document.getElementById("10p1l").click();
+  document.getElementById("13p1l").click();
+
+  document.getElementById("tr1.1").classList.add("check");
+  document.getElementById("tr1.2").classList.add("check");
+  document.getElementById("1p2l").click();
+  document.getElementById("4p2l").click();
+  document.getElementById("7p2l").click();
+  document.getElementById("10p2l").click();
+  document.getElementById("13p2l").click();
+
+  document.getElementById("tr2.1").classList.add("check");
+  document.getElementById("tr2.2").classList.add("check");
+  document.getElementById("1p3l").click();
+  document.getElementById("4p3l").click();
+  document.getElementById("7p3l").click();
+  document.getElementById("10p3l").click();
+  document.getElementById("13p3l").click();
+
+  document.getElementById("tr3.1").classList.add("check");
+  document.getElementById("tr3.2").classList.add("check");
+  document.getElementById("1p4l").click();
+  document.getElementById("4p4l").click();
+  document.getElementById("7p4l").click();
+  document.getElementById("10p4l").click();
+  document.getElementById("13p4l").click();
+
+  document.getElementById("tr4.1").classList.add("check");
+  document.getElementById("tr4.2").classList.add("check");
+  document.getElementById("1p5l").click();
+  document.getElementById("4p5l").click();
+  document.getElementById("7p5l").click();
+  document.getElementById("10p5l").click();
+  document.getElementById("13p5l").click();
+}
+
+
 //raggruppa i reset
 function allReset() {
   resetIndizzi();
   resetIndizziInizio();
   count = 0;
-  //location.reload();  
+  resetInput();
+
 }
 
 
